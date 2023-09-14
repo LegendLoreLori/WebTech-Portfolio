@@ -10,7 +10,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 20em;
-    height: 8em;
+    /*height: 8em;*/
     font-size: 1.5rem;
     background-color: #222222;
     color: #dddddd;
@@ -24,7 +24,7 @@
 
     .grid-container {
         grid-template-columns: none;
-        height: 10rem;
+        /*height: 10rem;*/
     }
 }
 
@@ -36,6 +36,6 @@
 
     .grid-container {
         grid-template-columns: none;
-        height: 12rem;
+        /*height: 12rem;*/
     }
 }
