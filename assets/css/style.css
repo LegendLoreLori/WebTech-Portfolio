@@ -1,41 +1,78 @@
 /*Default mobile style*/
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    background-color: grey;
-    font-size: 1.5rem;
-    color: #dddddd;
+main {
+    grid-area: content;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 20em;
-    /*height: 8em;*/
-    font-size: 1.5rem;
-    background-color: #222222;
-    color: #dddddd;
+aside {
+    grid-area: sidebar;
+    content-visibility: hidden;
 }
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 1em;
+    padding: 10px;
+    grid-template-areas:
+     "header"
+     "content"
+     "footer"
+}
+
+main > article {
+    background-color: #444444;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
 
 /*Tablet media query*/
-@media (min-width: 768px) {
-    .flex-container {
-        font-size: 1.3rem;
-    }
+/*@media only screen and (min-width: 768px) {*/
+/*    !*.flex-container {*!*/
+/*    !*    font-size: 1.3rem;*!*/
+/*    !*}*!*/
 
-    .grid-container {
-        grid-template-columns: none;
-        /*height: 10rem;*/
-    }
-}
+/*    aside {*/
+/*        content-visibility: visible;*/
+/*    }*/
 
-/*Desktop media query*/
-@media (min-width: 1024px) {
-    .flex-container {
-        font-size: 2rem;
-    }
+/*    .grid-wrapper {*/
+/*        grid-template-columns: 20% auto;*/
+/*        grid-template-areas:*/
+/*        "header   header"*/
+/*        "content  sidebar"*/
+/*        "footer   footer";*/
+/*    }*/
+/*}*/
 
-    .grid-container {
-        grid-template-columns: none;
-        /*height: 12rem;*/
-    }
-}
+/*!*Desktop media query*!*/
+/*@media only screen and (min-width: 1024px) {*/
+/*    !*.flex-container {*!*/
+/*    !*    font-size: 2rem;*!*/
+/*    !*}*!*/
+
+/*    aside {*/
+/*        content-visibility: visible;*/
+/*    }*/
+
+/*    .content > article {*/
+/*        margin: 1em;*/
+/*    }*/
+
+/*    .grid-wrapper {*/
+/*        grid-template-columns: auto 20%;*/
+/*        grid-template-areas:*/
+/*        "header   header"*/
+/*        "content  sidebar"*/
+/*        "footer   footer";*/
+/*    }*/
+/*}*/
