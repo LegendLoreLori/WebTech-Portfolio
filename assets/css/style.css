@@ -27,22 +27,22 @@ body > footer {
 }
 
 /*Tablet media query*/
-/*@media only screen and (min-width: 768px) {*/
-/*    .grid-wrapper {*/
-/*        grid-template-columns: 20% auto;*/
-/*        grid-template-areas:*/
-/*        "header"*/
-/*        "content"*/
-/*        "footer";*/
-/*    }*/
-/*}*/
-
-/*Desktop media query*/
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
     body > aside {
         display: block;
     }
 
+    .grid-wrapper {
+        grid-template-columns: auto 20%;
+        grid-template-areas:
+        "header header"
+        "content sidebar"
+        "footer footer";
+    }
+}
+
+/*Desktop media query*/
+@media only screen and (min-width: 1024px) {
     .grid-wrapper {
         grid-template-columns: 50px auto 30% 50px;
         grid-template-areas:
