@@ -1,6 +1,8 @@
 /*Default mobile style*/
 body > header {
     grid-area: header;
+    position: sticky;
+    top: 0;
 }
 
 body > main {
@@ -16,10 +18,23 @@ body > footer {
     grid-area: footer;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+}
+
+.flex {
+    margin: 10px;
+    flex-basis: 30%;
+}
+
 .grid-wrapper {
     display: grid;
-    grid-gap: 1em;
-    padding: 10px;
+    /*grid-gap: 0.5em;*/
+    /*padding: 10px;*/
     grid-template-areas:
      "header"
      "content"
@@ -39,12 +54,17 @@ body > footer {
         "content sidebar"
         "footer footer";
     }
+
+    /*.flex-container {*/
+    /*    flex-direction: row;*/
+    /*    flex-wrap: wrap;*/
+    /*}*/
 }
 
 /*Desktop media query*/
 @media only screen and (min-width: 1024px) {
     .grid-wrapper {
-        grid-template-columns: 50px auto 30% 50px;
+        grid-template-columns: 15% auto 30% 15%;
         grid-template-areas:
         "header header header header"
         ". content sidebar ."
@@ -55,7 +75,6 @@ body > footer {
 article, aside {
     background-color: #444444;
     color: #ffffff;
-    border-radius: 10px;
     padding: 10px;
 }
 
