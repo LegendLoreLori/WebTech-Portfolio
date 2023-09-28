@@ -27,8 +27,6 @@ body > footer {
 }
 
 .flex {
-    margin: 10px;
-    flex-basis: 30%;
 }
 
 .grid-wrapper {
@@ -55,10 +53,18 @@ body > footer {
         "footer footer";
     }
 
-    /*.flex-container {*/
-    /*    flex-direction: row;*/
-    /*    flex-wrap: wrap;*/
-    /*}*/
+    .flex-container {
+        flex-flow: row wrap;
+        /*justify-content: flex-start;*/
+        align-items: flex-start;
+    }
+
+    .flex {
+        flex-grow: 1;
+        max-width: 45%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 /*Desktop media query*/
