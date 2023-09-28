@@ -37,7 +37,8 @@ body > footer {
     grid-template-areas:
      "header"
      "content"
-     "footer"
+     "footer";
+    min-height: 100vh;
 }
 
 /*Tablet media query*/
@@ -47,6 +48,7 @@ body > footer {
     }
 
     .grid-wrapper {
+        grid-template-rows: auto 1fr auto;
         grid-template-columns: auto 20%;
         grid-template-areas:
         "header header"
