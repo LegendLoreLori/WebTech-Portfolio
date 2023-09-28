@@ -22,6 +22,7 @@ body > footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background: #aaaaaa;
     gap: 10px;
     padding: 10px;
 }
@@ -55,6 +56,7 @@ body > footer {
 
     .flex-container {
         flex-flow: row wrap;
+        justify-content: center;
         align-items: flex-start;
     }
 
@@ -69,13 +71,28 @@ body > footer {
 /*Desktop media query*/
 @media only screen and (min-width: 1024px) {
     .grid-wrapper {
-        grid-template-columns: 15% auto 30% 15%;
+        grid-template-columns: 5% auto 20% 5%;
         grid-template-areas:
         "header header header header"
         ". content sidebar ."
         "footer footer footer footer";
     }
+
+    .flex{
+        max-width: 45%;
+    }
 }
+
+@media only screen and (min-width: 1200px) {
+    .grid-wrapper {
+        grid-template-columns: 15% auto 20% 15%;
+    }
+
+    .flex {
+        max-width: 28%;
+    }
+}
+
 
 article, aside {
     background-color: #444444;
