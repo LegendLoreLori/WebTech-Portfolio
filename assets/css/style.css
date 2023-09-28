@@ -95,16 +95,40 @@ body > footer {
     }
 }
 
+/*body styling*/
+body > header,
+body > footer{
+    background-color: #777777;
+    color: #ffffff;
+    padding: 10px 0 10px 0;
+}
 
-article, aside {
+/*article styling*/
+article {
     background-color: #444444;
     color: #ffffff;
     padding: 10px;
 }
 
-body > header,
-body > footer {
+/*aside styling*/
+.sidebar-style {
+    background-color: #444444;
+    padding: 10px
+}
+
+.sidebar-style > section {
+    background: #aaaaaa;
+    margin: 0 0 10px 0;
+    border: #222222 solid;
+}
+
+.sidebar-style > section > header,
+.sidebar-style > section > footer {
     background-color: #777777;
     color: #ffffff;
-    padding: 10px 0 10px 0;
+    padding: 15px 0 15px 5px;
+}
+
+.sidebar-style > section > p {
+    padding: 10px 0 10px 5px;
 }
