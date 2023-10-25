@@ -9,15 +9,16 @@
 </head>
 <body class="grid-wrapper">
     <header>
+        <img src="https://via.placeholder.com/150" alt="Website Name" class="mobile-hidden"/>
         <h1>Website Name</h1>
-        <nav>
+        <nav class="mobile-hidden">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Instructions</a>
         </nav>
     </header>
-    <main class="flex-container">
-        <article class="flex">
+    <main class="flex-vertical">
+        <article class="flex-vertical-item">
             <header>
                 <h2>LOREM IPSUM</h2>
             </header>
@@ -38,7 +39,7 @@
                 <a href="#">Back to top</a>
             </footer>
         </article>
-        <article class="flex">
+        <article class="flex-vertical-item">
             <header>
                 <h2>THAT'S MY LECTURE</h2>
             </header>
@@ -63,7 +64,7 @@
                 <a href="#">Back to top</a>
             </footer>
         </article>
-        <article class="flex">
+        <article class="flex-vertical-item">
             <header>
                 <h2>TUTORING THE TUTOR</h2>
             </header>
@@ -99,7 +100,7 @@
                 <a href="#">Back to top</a>
             </footer>
         </article>
-        <article class="flex">
+        <article class="flex-vertical-item">
             <header>
                 <h2>Lorem Ipsum</h2>
             </header>
@@ -115,7 +116,7 @@
                 <a href="#">Back to top</a>
             </footer>
         </article>
-        <article class="flex">
+        <article class="flex-vertical-item">
             <header>
                 <h2>Lorem Ipsum</h2>
             </header>
@@ -132,7 +133,7 @@
             </footer>
         </article>
     </main>
-    <aside class="sidebar-style">
+    <aside class="sidebar-style mobile-hidden">
         <section>
             <header>
                 <h3>Aside Section 1 Header</h3>
@@ -162,8 +163,13 @@
             </footer>
         </section>
     </aside>
-    <footer>
-        <p>Lorenzo Mandolfino - North Metropolitan TAFE 2023</p>
+    <footer class="flex-horizontal">
+        <p class="flex-horizontal-item">Lorenzo Mandolfino - North Metropolitan TAFE 2023</p>
+        <ul class="flex-horizontal-item mobile-hidden">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Instructions</a></li>
+        </ul>
     </footer>
 </body>
 </html>

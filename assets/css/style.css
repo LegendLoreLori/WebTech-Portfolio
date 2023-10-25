@@ -1,4 +1,5 @@
 /*Default mobile style*/
+/*TODO: fix jittery header*/
 body > header {
     grid-area: header;
     position: sticky;
@@ -9,8 +10,7 @@ body > main {
     grid-area: content;
 }
 
-body > aside {
-    grid-area: sidebar;
+.mobile-hidden {
     display: none;
 }
 
@@ -18,22 +18,29 @@ body > footer {
     grid-area: footer;
 }
 
-.flex-container {
+.flex-vertical {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     background: #aaaaaa;
     gap: 10px;
     padding: 10px;
 }
 
-.flex {
+/*not implemented in mobile*/
+.flex-horizontal {
+}
+
+.flex-vertical-item {
+    flex-grow: 1;
+}
+
+/*not implemented in mobile*/
+.flex-horizontal-item {
 }
 
 .grid-wrapper {
     display: grid;
-    /*grid-gap: 0.5em;*/
-    /*padding: 10px;*/
     grid-template-areas:
      "header"
      "content"
@@ -44,30 +51,38 @@ body > footer {
 /*Tablet media query*/
 @media only screen and (min-width: 768px) {
     body > aside {
+        grid-area: sidebar;
+    }
+
+    .mobile-hidden {
         display: block;
     }
 
     .grid-wrapper {
         grid-template-rows: auto 1fr auto;
-        grid-template-columns: auto 20%;
+        grid-template-columns: auto 30%;
         grid-template-areas:
         "header header"
         "content sidebar"
         "footer footer";
     }
-
-    .flex-container {
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: flex-start;
+    /*TODO: implement text truncation*/
+    .flex-vertical-item {
+        max-height: 20%;
+        overflow: auto;
     }
 
-    .flex {
-        flex-grow: 1;
-        max-width: 45%;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    .flex-horizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
     }
+
+    /*placeholder for styling*/
+    .flex-horizontal-item{
+    }
+
 }
 
 /*Desktop media query*/
@@ -79,19 +94,11 @@ body > footer {
         ". content sidebar ."
         "footer footer footer footer";
     }
-
-    .flex{
-        max-width: 45%;
-    }
 }
 
 @media only screen and (min-width: 1200px) {
     .grid-wrapper {
         grid-template-columns: 15% auto 20% 15%;
-    }
-
-    .flex {
-        max-width: 28%;
     }
 }
 
