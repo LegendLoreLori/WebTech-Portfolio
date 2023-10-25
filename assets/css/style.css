@@ -107,20 +107,20 @@ body > header,
 body > footer{
     background-color: #777777;
     color: #ffffff;
-    padding: 10px 0 10px 0;
+    /*padding: 10px 0 10px 0;*/
 }
 
 /*article styling*/
 article {
     background-color: #444444;
     color: #ffffff;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 /*aside styling*/
 .sidebar-style {
     background-color: #444444;
-    padding: 10px
+    /*padding: 10px*/
 }
 
 .sidebar-style > section {
@@ -133,9 +133,14 @@ article {
 .sidebar-style > section > footer {
     background-color: #777777;
     color: #ffffff;
-    padding: 15px 0 15px 5px;
+    padding: 5px 0 5px 5px;
 }
 
 .sidebar-style > section > p {
     padding: 10px 0 10px 5px;
+}
+
+.padded-10,
+.padded-10 > article{
+    padding: 10px;
 }
