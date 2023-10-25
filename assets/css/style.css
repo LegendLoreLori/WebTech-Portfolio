@@ -1,0 +1,146 @@
+/*Default mobile style*/
+/*TODO: fix jittery header*/
+body > header {
+    grid-area: header;
+    position: sticky;
+    top: 0;
+}
+
+body > main {
+    grid-area: content;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+body > footer {
+    grid-area: footer;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #aaaaaa;
+    gap: 10px;
+    padding: 10px;
+}
+
+/*not implemented in mobile*/
+.flex-horizontal {
+}
+
+.flex-vertical-item {
+    flex-grow: 1;
+}
+
+/*not implemented in mobile*/
+.flex-horizontal-item {
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-areas:
+     "header"
+     "content"
+     "footer";
+    min-height: 100vh;
+}
+
+/*Tablet media query*/
+@media only screen and (min-width: 768px) {
+    body > aside {
+        grid-area: sidebar;
+    }
+
+    .mobile-hidden {
+        display: block;
+    }
+
+    .grid-wrapper {
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto 30%;
+        grid-template-areas:
+        "header header"
+        "content sidebar"
+        "footer footer";
+    }
+    /*TODO: implement text truncation*/
+    .flex-vertical-item {
+        max-height: 20%;
+        overflow: auto;
+    }
+
+    .flex-horizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    /*placeholder for styling*/
+    .flex-horizontal-item{
+    }
+
+}
+
+/*Desktop media query*/
+@media only screen and (min-width: 1024px) {
+    .grid-wrapper {
+        grid-template-columns: 5% auto 20% 5%;
+        grid-template-areas:
+        "header header header header"
+        ". content sidebar ."
+        "footer footer footer footer";
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .grid-wrapper {
+        grid-template-columns: 15% auto 20% 15%;
+    }
+}
+
+/*body styling*/
+body > header,
+body > footer{
+    background-color: #777777;
+    color: #ffffff;
+    /*padding: 10px 0 10px 0;*/
+}
+
+/*article styling*/
+article {
+    background-color: #444444;
+    color: #ffffff;
+    /*padding: 10px;*/
+}
+
+/*aside styling*/
+.sidebar-style {
+    background-color: #444444;
+    /*padding: 10px*/
+}
+
+.sidebar-style > section {
+    background: #aaaaaa;
+    margin: 0 0 10px 0;
+    border: #222222 solid;
+}
+
+.sidebar-style > section > header,
+.sidebar-style > section > footer {
+    background-color: #777777;
+    color: #ffffff;
+    padding: 5px 0 5px 5px;
+}
+
+.sidebar-style > section > p {
+    padding: 10px 0 10px 5px;
+}
+
+.padded-10,
+.padded-10 > article{
+    padding: 10px;
+}
