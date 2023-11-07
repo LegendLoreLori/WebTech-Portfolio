@@ -56,6 +56,10 @@ body > footer {
 }
 
 .thumbnail {
+  max-width: 360px;
+  width: 100%;
+  float: left;
+  margin: 5px 10px 5px 0;
 }
 
 /*Tablet media query*/
@@ -157,4 +161,9 @@ article {
 .padded-10,
 .padded-10 > article {
   padding: 10px;
+}
+
+section > p,
+section > h3 {
+  padding: 0 0 5px 0;
 }
