@@ -14,6 +14,10 @@ body > main {
     display: none;
 }
 
+.desktop-hidden {
+    display: block;
+}
+
 body > footer {
     grid-area: footer;
 }
@@ -27,8 +31,11 @@ body > footer {
     padding: 10px;
 }
 
-/*not implemented in mobile*/
 .flex-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flex-vertical-item {
@@ -56,6 +63,10 @@ body > footer {
 
     .mobile-hidden {
         display: block;
+    }
+
+    .desktop-hidden {
+        display: none;
     }
 
     .grid-wrapper {
