@@ -1,5 +1,4 @@
 /*Default mobile style*/
-/*TODO: fix jittery header*/
 body > header {
   grid-area: header;
   position: sticky;
