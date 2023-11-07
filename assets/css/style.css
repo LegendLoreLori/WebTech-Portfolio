@@ -26,7 +26,6 @@ body > footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: #aaaaaa;
   gap: 10px;
   padding: 10px;
 }
@@ -42,10 +41,6 @@ body > footer {
   flex-grow: 1;
 }
 
-/*not implemented in mobile*/
-.flex-horizontal-item {
-}
-
 .grid-wrapper {
   display: grid;
   grid-template-areas:
@@ -58,8 +53,11 @@ body > footer {
 .thumbnail {
   max-width: 360px;
   width: 100%;
-  float: left;
   margin: 5px 5px 5px 0;
+}
+
+.floating {
+  float: left;
 }
 
 /*Tablet media query*/
@@ -97,10 +95,6 @@ body > footer {
     justify-content: flex-start;
     gap: 10px;
   }
-
-  /*placeholder for styling*/
-  .flex-horizontal-item {
-  }
 }
 
 /*Desktop media query*/
@@ -120,37 +114,12 @@ body > footer {
   }
 }
 
-/*body styling*/
-body > header,
-body > footer {
-  background-color: #777777;
-  color: #ffffff;
-  /*padding: 10px 0 10px 0;*/
-}
-
-/*article styling*/
-article {
-  background-color: #444444;
-  color: #ffffff;
-  /*padding: 10px;*/
-}
-
-/*aside styling*/
-.sidebar-style {
-  background-color: #444444;
-  /*padding: 10px*/
-}
-
 .sidebar-style > section {
-  background: #aaaaaa;
   margin: 0 0 10px 0;
-  border: #222222 solid;
 }
 
 .sidebar-style > section > header,
 .sidebar-style > section > footer {
-  background-color: #777777;
-  color: #ffffff;
   padding: 5px 0 5px 5px;
 }
 
@@ -166,4 +135,34 @@ article {
 section > p,
 section > h3 {
   padding: 0 0 5px 0;
+}
+
+/*colours*/
+.white {
+  background: #ffffff;
+  color: #000000;
+}
+
+.alabaster {
+  background: #f3f0e2;
+  color: #000000;
+}
+
+.jasmine {
+  background: #ffe985;
+  color: #000000;
+}
+
+.plum {
+  background: #824c71;
+  color: #ffffff;
+}
+
+.violet {
+  background: #4a2545;
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
 }
