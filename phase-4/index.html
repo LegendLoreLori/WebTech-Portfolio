@@ -268,14 +268,26 @@
     <aside class="sidebar-style padded-10 mobile-hidden alabaster">
       <section class="white">
         <header>
-          <h3>Aside Section 1 Header</h3>
+          <h3>Hi Hungry, I'm Dad.</h3>
         </header>
-        <p>
-          lorem ipsum consectetur adipiscing elit. Nunc mattis nunc et neque
-          aliquet, vitae imperdiet odio egestas. In hac habitasse
-        </p>
+        <form action="">
+          <fieldset>
+            <p>
+              <label for="joke-input">Number of jokes:</label>
+              <input type="text" size="1" id="joke-input" pattern="/^[0-9]*$/" required>
+            </p>
+            <button type="submit">Tell me a joke!</button>
+            <div id="joke-response" class="jasmine">
+              <ul>
+                <li id="joke-1"></li>
+                <li id="joke-2"></li>
+                <li id="joke-3"></li>
+              </ul>
+            </div>
+          </fieldset>
+        </form>
         <footer>
-          <p>Lorenzo Mandolfino 28/03/23</p>
+          <p>Lorenzo Mandolfino 08/11/23</p>
         </footer>
       </section>
       <section class="white">

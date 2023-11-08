@@ -113,6 +113,14 @@ body > footer {
   }
 }
 
+#joke-response {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 100%;
+  height: 9rem;
+}
+
+/*TODO: redo padding classes*/
 .sidebar-style > section {
   margin: 0 0 10px 0;
 }
