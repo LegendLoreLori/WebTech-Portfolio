@@ -26,7 +26,6 @@ body > footer {
   flex-direction: column;
   justify-content: flex-start;
   gap: 10px;
-  padding: 10px;
 }
 
 .flex-horizontal {
@@ -49,14 +48,15 @@ body > footer {
   min-height: 100vh;
 }
 
-.thumbnail {
-  max-width: 360px;
+#joke-response {
+  box-sizing: border-box;
+  margin: 10px 0 10px 0;
   width: 100%;
-  margin: 5px 5px 5px 0;
+  height: 9rem;
 }
 
-.floating {
-  float: left;
+#website-header {
+  font-size: 2rem;
 }
 
 /*Tablet media query*/
@@ -113,35 +113,36 @@ body > footer {
   }
 }
 
-#joke-response {
-  box-sizing: border-box;
-  padding: 5px;
+/*utility classes*/
+
+.thumbnail {
+  max-width: 360px;
   width: 100%;
-  height: 9rem;
 }
 
-/*TODO: redo padding classes*/
-.sidebar-style > section {
-  margin: 0 0 10px 0;
+.left-float {
+  float: left;
+  margin: 0 10px 0 0;
 }
 
-.sidebar-style > section > header,
-.sidebar-style > section > footer {
-  padding: 5px 0 5px 5px;
-}
-
-.sidebar-style > section > p {
-  padding: 10px 0 10px 5px;
-}
-
-.padded-10,
-.padded-10 > article {
+.padded-10 {
   padding: 10px;
 }
 
-section > p,
-section > h3 {
+.padded-5 {
+  padding: 5px;
+}
+
+.bottom-5 {
   padding: 0 0 5px 0;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.large {
+  font-size: 1.5rem;
 }
 
 /*colours*/
