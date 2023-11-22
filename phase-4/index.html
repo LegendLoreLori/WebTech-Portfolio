@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Phase 2</title>
+    <title>Phase 4</title>
     <link rel="stylesheet" href="../assets/css/meyer-reset.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js" defer></script>
   </head>
   <body class="grid-wrapper plum">
     <header class="padded-10 violet">
@@ -13,7 +14,7 @@
         <img
           src="https://via.placeholder.com/50"
           alt="Website Name"
-          class="mobile-hidden"
+          class="mobile-hidden bottom-5"
         >
         <h1 id="website-header">Website Name</h1>
         <input
@@ -270,22 +271,22 @@
         <header class="large bottom-5">
           <h3>Hi Hungry, I'm Dad.</h3>
         </header>
-        <form action="">
-          <fieldset>
+<!--        <form action="">-->
+<!--          <fieldset>-->
             <p>
               <label for="joke-input">Number of jokes:</label>
               <input type="text" size="1" id="joke-input" pattern="/^[0-9]*$/" required>
             </p>
-            <button type="submit">Tell me a joke!</button>
+            <button id="joke-button" type="submit">Tell me a joke!</button>
             <div id="joke-response" class="padded-5 jasmine">
               <ul>
-                <li id="joke-1"></li>
-                <li id="joke-2"></li>
-                <li id="joke-3"></li>
+                <li class="bottom-5" id="joke-1"></li>
+                <li class="bottom-5" id="joke-2"></li>
+                <li class="bottom-5" id="joke-3"></li>
               </ul>
             </div>
-          </fieldset>
-        </form>
+<!--          </fieldset>-->
+<!--        </form>-->
         <footer>
           <p>Lorenzo Mandolfino 08/11/23</p>
         </footer>
