@@ -14,9 +14,9 @@ jokeButton.addEventListener('click', () => {
     let limitText = document.getElementById('joke-input').value;
     let limit = parseInt(limitText, 10)
     fetch(dadJokeApi.url + limit, {method: dadJokeApi.method, headers: dadJokeApi.headers})
-        .then(function (response){
+        .then(function (response) {
             return response.json()
-    }).then(function (data) {
+        }).then(function (data) {
         // This is the JSON from our response
         //TODO: find a better way than this
         console.log(data[0].joke);

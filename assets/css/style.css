@@ -1,178 +1,178 @@
 /*Default mobile style*/
 body > header {
-  grid-area: header;
-  position: sticky;
-  top: 0;
+    grid-area: header;
+    position: sticky;
+    top: 0;
 }
 
 body > main {
-  grid-area: content;
+    grid-area: content;
 }
 
 .mobile-hidden {
-  display: none;
+    display: none;
 }
 
 .desktop-hidden {
-  display: block;
+    display: block;
 }
 
 body > footer {
-  grid-area: footer;
+    grid-area: footer;
 }
 
 .flex-vertical {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .flex-horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .flex-vertical-item {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .grid-wrapper {
-  display: grid;
-  grid-template-areas:
+    display: grid;
+    grid-template-areas:
     "header"
     "content"
     "footer";
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
 #joke-response {
-  box-sizing: border-box;
-  margin: 10px 0 10px 0;
-  width: 100%;
-  min-height: 9rem;
+    box-sizing: border-box;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    min-height: 9rem;
 }
 
 #website-header {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 /*Tablet media query*/
 @media only screen and (min-width: 768px) {
-  body > aside {
-    grid-area: sidebar;
-  }
+    body > aside {
+        grid-area: sidebar;
+    }
 
-  .mobile-hidden {
-    display: block;
-  }
+    .mobile-hidden {
+        display: block;
+    }
 
-  .desktop-hidden {
-    display: none;
-  }
+    .desktop-hidden {
+        display: none;
+    }
 
-  .grid-wrapper {
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 30%;
-    grid-template-areas:
+    .grid-wrapper {
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto 30%;
+        grid-template-areas:
       "header header"
       "content sidebar"
       "footer footer";
-  }
+    }
 
-  .flex-vertical-item {
-    max-height: 20%;
-    overflow: auto;
-  }
+    .flex-vertical-item {
+        max-height: 20%;
+        overflow: auto;
+    }
 
-  .flex-horizontal {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 10px;
-  }
+    .flex-horizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+    }
 }
 
 /*Desktop media query*/
 @media only screen and (min-width: 1024px) {
-  .grid-wrapper {
-    grid-template-columns: 5% auto 20% 5%;
-    grid-template-areas:
+    .grid-wrapper {
+        grid-template-columns: 5% auto 20% 5%;
+        grid-template-areas:
       "header header header header"
       ". content sidebar ."
       "footer footer footer footer";
-  }
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-  .grid-wrapper {
-    grid-template-columns: 15% auto 20% 15%;
-  }
+    .grid-wrapper {
+        grid-template-columns: 15% auto 20% 15%;
+    }
 }
 
 /*utility classes*/
 .thumbnail {
-  max-width: 360px;
-  width: 100%;
+    max-width: 360px;
+    width: 100%;
 }
 
 .left-float {
-  float: left;
-  margin: 0 10px 0 0;
+    float: left;
+    margin: 0 10px 0 0;
 }
 
 .padded-10 {
-  padding: 10px;
+    padding: 10px;
 }
 
 .padded-5 {
-  padding: 5px;
+    padding: 5px;
 }
 
 .bottom-5 {
-  padding: 0 0 5px 0;
+    padding: 0 0 5px 0;
 }
 
 .top-5 {
-  padding: 5px 0 0 0;
+    padding: 5px 0 0 0;
 }
 
 .margin-10 {
-  margin: 10px;
+    margin: 10px;
 }
 
 .large {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 /*colours*/
 .white {
-  background: #ffffff;
-  color: #000000;
+    background: #ffffff;
+    color: #000000;
 }
 
 .alabaster {
-  background: #f3f0e2;
-  color: #000000;
+    background: #f3f0e2;
+    color: #000000;
 }
 
 .jasmine {
-  background: #ffe985;
-  color: #000000;
+    background: #ffe985;
+    color: #000000;
 }
 
 .plum {
-  background: #824c71;
-  color: #ffffff;
+    background: #824c71;
+    color: #ffffff;
 }
 
 .violet {
-  background: #4a2545;
-  color: #ffffff;
+    background: #4a2545;
+    color: #ffffff;
 }
 
 a {
-  color: inherit;
+    color: inherit;
 }
