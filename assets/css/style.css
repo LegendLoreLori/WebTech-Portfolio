@@ -13,6 +13,10 @@ body > main {
     display: none;
 }
 
+body > aside {
+    display: none;
+}
+
 .desktop-hidden {
     display: block;
 }
