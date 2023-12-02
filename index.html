@@ -6,17 +6,18 @@
     <title>CERT IV Web Tech Portfolio</title>
     <link rel="stylesheet" href="./assets/css/site.css">
 </head>
-<body class="">
+<body>
 <header class="text-white bg-gray-500 shadow-sm">
-    <div class="flex flex-col items-center justify-center p-6 mx-auto md:flex-row gap-2">
+    <div class="flex flex-col items-center justify-start p-6 mx-auto md:flex-row gap-2">
         <img src="https://via.placeholder.com/50" alt="Portfolio Logo" width="50" height="50">
         <h1 class="text-xl font-bold">Certificate IV in IT (Programming) Web Tech Portfolio</h1>
+        <a href="index.html" class="md:ml-auto hover:underline">Home</a>
+        <a href="copyright.html" class="hover:underline">Copyright</a>
     </div>
 </header>
 <main>
-<!--    TODO: change card to 2x2 layout-->
-<!--    TODO: implement copyright page-->
-    <div class="flex flex-col m-4 gap-2 md:min-h-[90vh] md:flex-row md:flexwrap md:items-center md:justify-center">
+<!--    I don't like this implementation-->
+    <div class="flex flex-col m-4 gap-8 md:min-h-[80vh] md:flex-row md:flexwrap md:items-center md:justify-center">
         <a href="./phase-1/index.html" class="md:w-1/5 border border-gray-500 flex flex-col gap-4 p-4 drop-shadow-sm hover:drop-shadow-xl">
             <header class="bg-gray-800 text-white p-4 -m-4 mb-0">
                 <h4 class="text-bold text-xl">Phase 1</h4>
@@ -33,7 +34,7 @@
                 <h4 class="text-bold text-xl">Phase 2</h4>
             </header>
             <div class="flex flex-col gap-4">
-                <p>Implement and test the required CSS to provide the layout as provided. </p>
+                <p>Implement and test the required CSS to provide the layout as provided.</p>
             </div>
             <footer class="bg-gray-200 text-gray-800 p-4 -m-4 mt-0">
                 <p>25-10-23</p>
@@ -62,9 +63,8 @@
             </footer>
         </a>
     </div>
-
 </main>
-<footer class="text-white bg-gray-500 w-full flex flex-col items-center justify-center p-6 mx-auto md:flex-row gap-2">
+<footer class="text-white bg-gray-500 w-full flex flex-col items-center justify-center p-6 md:fixed md:bottom-0 md:flex-row gap-2">
     <h2 class="text-xl font-bold">Certificate IV in IT (Programming)</h2>
     <p> Web Technologies Portfolio as implemented by Lorenzo</p>
 </footer>
